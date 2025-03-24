@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Overlay (Ensures Text Readability) -->
+    <div class="gradient-overlay"></div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="userInput" placeholder="Type a word..." autocomplete="off">
+        <button onclick="fetchWordInfo()">🔍</button>
+    </div>
+
+    <!-- Word Information Overlay -->
+    <div class="overlay">
+        <h2 id="wordTitle" class="hidden"></h2>
+        <p class="result hidden" id="wordMeaning"></p>
+        <p class="result hidden" id="extraInfo"></p>
+        <a id="wikiLink" class="hidden" target="_blank">Learn More ↗</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
